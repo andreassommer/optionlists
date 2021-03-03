@@ -1,2 +1,37 @@
 # optionlists
-Matlab tools for handling name-value pairs in function calls: val = f(a,b,'name','test','age',35,'numbers',{1,7,2})
+
+Matlab tools for handling name-value pairs in function calls:
+  - querying arguments by name:     `getOption`
+  - checking for present arguments: `hasOption`
+  - generation of option lists:     `setOption`
+  - removing from option lists:     `removeOption`
+  - checking validity:              `isOptionlist, assertOptionlist` 
+
+
+# Example
+
+Call: 
+```matlab 
+  val = f(a,b,'name','test','age',35,'numbers',{1,7,2})
+```
+
+Function code:
+```matlab
+function val = f(a,b,varargin)
+    % a and b are normal position-dependent arguments.
+    % Further arguments are (usually) optional and initialized by default values.
+  
+    % Set default values
+    name    = 'defaultname';
+    age     = 0;
+    numbers = {1,2,3,4,5};
+    
+    % Query optional arguments:
+    if hasOption(varargin, 'name'   ),    name = getOption(varargin, 'name'   );  end
+    if hasOption(varargin, 'age'    ),     age = getOption(varargin, 'age'    );  end
+    if hasOption(varargin, 'numbers'), numbers = getOption(varargin, 'numbers');  end
+    
+    % program code 
+    % ...
+end    
+``` 
