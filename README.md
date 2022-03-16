@@ -5,7 +5,11 @@ Matlab tools for handling name-value pairs in function calls:
   - checking for present arguments: `hasOption`
   - generation of option lists:     `setOption`
   - removing from option lists:     `removeOption`
-  - checking validity:              `isOptionlist, assertOptionlist` 
+  - checking validity:              `isOptionlist`, `assertOptionlist` 
+
+## Documentation
+
+Documentation is provided inside the code and thus available using Matlab's help system via `help` and `doc`, e.g. `help getOption`.
 
 
 # Example
