@@ -18,7 +18,7 @@ function result = hasOption(cellarray, searchProperty)
    % cycle through properties
    for k = 1:2:length(cellarray)
       propertyName = cellarray{k};
-      if ~ischar(propertyName),
+      if ~ischar(propertyName)
          result = NaN;
          return;
       end
