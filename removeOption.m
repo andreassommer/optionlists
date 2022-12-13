@@ -11,7 +11,7 @@ function clearedOptions = removeOption(optionlist, varargin)
    % andreas.sommer@iwr.uni-heidelberg.de
    % code@andreas-sommer.eu
    %
-
+   %
    % Mar2021: Renamed from removeOptions to removeOption to unify naming
    
    % if no options are to be deleted, just return the given optionlist 
