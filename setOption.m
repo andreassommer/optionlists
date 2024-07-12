@@ -13,7 +13,8 @@ function newOptions = setOption(optionlist, varargin)
    % andreas.sommer@iwr.uni-heidelberg.de
    % code@andreas-sommer.eu
 
-   
+   olDisplayDeprecationWarning();
+
    % ensure optionlist and varargin are an optionlists
    assertOptionlist(optionlist);
    assertOptionlist(varargin);

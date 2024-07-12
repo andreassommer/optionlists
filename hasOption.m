@@ -10,11 +10,12 @@ function result = hasOption(cellarray, searchProperty)
 
    % History: Sep2016 --> renamed to hasOption, asserting optionlist
    
+   olDisplayDeprecationWarning();
+
    % initialize
    result = false;
    assertOptionlist(cellarray);
    
-
    % cycle through properties
    for k = 1:2:length(cellarray)
       propertyName = cellarray{k};

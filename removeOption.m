@@ -14,6 +14,8 @@ function clearedOptions = removeOption(optionlist, varargin)
    %
    % Mar2021: Renamed from removeOptions to removeOption to unify naming
    
+   olDisplayDeprecationWarning();
+   
    % if no options are to be deleted, just return the given optionlist 
    if (nargin==1)
       clearedOptions = optionlist;

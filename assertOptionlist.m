@@ -12,6 +12,8 @@ function answer = assertOptionlist(object)
    % andreas.sommer@iwr.uni-heidelberg.de
    % code@andreas-sommer.eu
    
+   olDisplayDeprecationWarning();
+
    % ensure optionlist is an optionlist
    [passed, problem] = isOptionlist(object);
    if ~passed

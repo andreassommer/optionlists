@@ -1,3 +1,12 @@
+# optionlists has moved to [mmtools repo](https://github.com/andreassommer/mmtools)
+
+On July 2024, the optionlists repository was moved to the 
+[mmtools (miscellaneous matlab tools) repo](https://github.com/andreassommer/mmtools)
+and all functions have been prefixed by "ol" to avoid name clobberings.
+
+There will be no further updates to the optionlists repository, 
+but it will be kept online to not breach existing projects.
+
 # optionlists
 
 Matlab tools for handling name-value pairs in function calls:

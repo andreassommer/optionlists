@@ -13,7 +13,8 @@ function [answer, problem] = isOptionlist(object)
    % andreas.sommer@iwr.uni-heidelberg.de
    % code@andreas-sommer.eu
 
-
+   olDisplayDeprecationWarning();
+   
    % Init
    answer = false;
    

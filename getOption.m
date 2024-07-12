@@ -33,6 +33,8 @@ function [value, cellarray] = getOption(cellarray, searchOption, defaultValue)
    %           Mar2017 --> cut the cell array, if two-arg-output
    %           Dec2022 --> add default value 
    
+   olDisplayDeprecationWarning();
+
    % was a default value provided?
    if (nargin<3), defaultValue = []; end
    
